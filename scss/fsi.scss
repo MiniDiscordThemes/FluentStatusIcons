@@ -20,7 +20,7 @@ foreignObject {
         }
     }
     // Remove default mask from status
-    rect {
+    > rect {
         mask: none;
     }
 }
