@@ -1,0 +1,24 @@
+@use "./svg";
+@use "./path";
+@use "sass:map";
+
+@mixin picker($STATUS) {
+    $status-path: map.get(path.$picker, $STATUS);
+
+    &[mask="url(#svg-mask-status-#{$STATUS})"] {
+        mask: svg.construct($VIEWBOX: "viewBox='0 0 1 1'", $PATH: $status-path);
+    }
+}
+
+@mixin profile($STATUS, $SIZE) {
+    $status-path: map.get(map.get(path.$profile, $SIZE), $STATUS);
+    $avatar-path: map.get(map.get(path.$profile, $SIZE), "avatar");
+
+    @if $STATUS == "online-mobile" {
+        $avatar-path: map.get(map.get(path.$profile, $SIZE), "avatar-mobile");
+    }
+
+    &[width="#{$SIZE}"]:has(rect[mask="url(#svg-mask-status-#{$STATUS})"]) {
+        mask: svg.construct($VIEWBOX: "viewBox='0 0 #{$SIZE} #{$SIZE}'", $PATH: $status-path + " " + $avatar-path);
+    }
+}
