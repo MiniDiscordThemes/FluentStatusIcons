@@ -1,10 +1,10 @@
 {
   "name": "fsi-discord-theme",
   "version": "1.0.0",
-  "description": "Fluent presence icons, designed by Microsoft.",
+  "description": "A Discord theme to apply Fluent UI icons to user status.",
   "repository": "github:MiniDiscordThemes/FluentStatusIcons",
   "author": "Saltssaumure <themes@saltssaumure.net>",
-  "license": "MIT",
+  "license": "GPL-3.0",
   "private": true,
   "scripts": {
     "dev": "bd-scss dev",

@@ -1,7 +1,7 @@
 {
   "id": "net.saltssaumure.FluentStatusIcons",
   "name": "FluentStatusIcons",
-  "description": "Fluent presence icons, designed by Microsoft.",
+  "description": "Applies Fluent UI icons to user status.",
   "author": {
     "name": "Saltssaumure",
     "discordID": "134142022092062720",
@@ -12,9 +12,13 @@
     "type": "store",
     "id": "net.saltssaumure.FluentStatusIcons"
   },
-  "license": "MIT",
+  "license": "GPL-3.0",
   "type": "replugged-theme",
   "main": "scss/fsi.scss",
   "source": "https://github.com/MiniDiscordThemes/FluentStatusIcons",
-  "image": ["https://tharki-god.github.io/files-random-host/bdpluginsassets/fluenticons.png"]
+  "image": [
+    "https://cdn.discordapp.com/attachments/1142305515439923260/1145988597019844618/fsi-picker.png",
+    "https://cdn.discordapp.com/attachments/1142305515439923260/1145988597263118396/fsi-popout.png",
+    "https://cdn.discordapp.com/attachments/1142305515439923260/1145988596701069362/fsi-modal.png"
+  ]
 }
