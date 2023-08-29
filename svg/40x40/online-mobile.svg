@@ -1,0 +1,6 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+   <path fill='tan'
+      d="M 16 0 A 16 16 0 0 0 0 16 A 16 16 0 0 0 16 32 A 16 16 0 0 0 20.316 31.385 A 8 8 0 0 1 19 27 A 8 8 0 0 1 27 19 A 8 8 0 0 1 31.385 20.314 A 16 16 0 0 0 32 16 A 16 16 0 0 0 16 0 z" />
+   <path fill='red'
+      d="" />
+</svg>
