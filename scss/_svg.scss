@@ -1,0 +1,8 @@
+// Construct encoded SVG from viewbox and path
+@function construct($VIEWBOX, $PATH) {
+    $start: "data:image/svg+xml; utf-8,<svg xmlns='http://www.w3.org/2000/svg' ";
+    $mid: "><path fill='red' d='";
+    $end: "'/></svg>";
+    $SVG: url($start + $VIEWBOX + $mid + $PATH + $end);
+    @return $SVG;
+}

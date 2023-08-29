@@ -1,0 +1,26 @@
+@use "./mask";
+
+$statuses: "online-mobile", "online", "idle", "dnd", "offline", "streaming";
+$sizes: "40", "92", "138";
+
+// Status picker
+foreignObject {
+    // Apply mask to status
+    @each $status in $statuses {
+        @include mask.picker($status);
+    }
+}
+
+// Other profile
+.mask-1y0tyc {
+    // Apply mask to whole svg
+    @each $size in $sizes {
+        @each $status in $statuses {
+            @include mask.profile($status, $size);
+        }
+    }
+    // Remove default mask from status
+    > rect {
+        mask: none;
+    }
+}
