@@ -1,4 +1,6 @@
-### FluentStatusIcons
+
+
+### FluentStatusIcons Discord Theme
 
 Fluent presence icons, designed by Microsoft.
 

@@ -1,21 +1,20 @@
 {
-  "id": "dev.tharki.FluentStatusIcons",
+  "id": "net.saltssaumure.FluentStatusIcons",
   "name": "FluentStatusIcons",
   "description": "Fluent presence icons, designed by Microsoft.",
-  "image": "https://tharki-god.github.io/files-random-host/bdpluginsassets/fluenticons.png",
-  "source": "https://github.com/Tharki-God/FluentStatusIcons",
   "author": {
-    "name": "Ahlawat",
-    "discordID": "1025214794766221384",
-    "github": "Tharki-God"
+    "name": "Saltssaumure",
+    "discordID": "134142022092062720",
+    "github": "Saltssaumure"
   },
-  "version": "0.9.3",
+  "version": "1.0.0",
   "updater": {
     "type": "store",
-    "id": "dev.tharki.FluentStatusIcons"
+    "id": "net.saltssaumure.FluentStatusIcons"
   },
   "license": "MIT",
-  "type": "replugged-plugin",
-  "renderer": "src/index.ts",
-  "plaintextPatches": "src/plaintextPatches.ts"
+  "type": "replugged-theme",
+  "main": "scss/fsi.scss",
+  "source": "https://github.com/MiniDiscordThemes/FluentStatusIcons",
+  "image": ["https://tharki-god.github.io/files-random-host/bdpluginsassets/fluenticons.png"]
 }
