@@ -92,7 +92,7 @@
 
 ## License
 [GPL-3.0 License][license]
-- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, just include the original license.
+- <span title="Too long; didn't read; not a lawyer">TL;DR;NAL</span>: Do whatever you want with this theme, as long as you allow others to do the same with your version.
 
 ### Includes
 - [FluentStatusIcons plugin][fsiplugin] by [Ahlawat][fsiplugin-author] - [MIT License][fsiplugin-license]
