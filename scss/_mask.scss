@@ -1,5 +1,6 @@
 @use "./svg";
 @use "./path";
+@use "./other";
 @use "sass:map";
 
 @mixin picker($STATUS) {
@@ -13,12 +14,32 @@
 @mixin profile($STATUS, $SIZE) {
     $status-path: map.get(map.get(path.$profile, $SIZE), $STATUS);
     $avatar-path: map.get(map.get(path.$profile, $SIZE), "avatar");
+    $color: map.get(other.$colors, $STATUS);
+    $status-size: map.get(other.$status-sizes, $SIZE);
 
     @if $STATUS == "online-mobile" {
         $avatar-path: map.get(map.get(path.$profile, $SIZE), "avatar-mobile");
     }
 
-    &[width="#{$SIZE}"]:has(rect[mask="url(#svg-mask-status-#{$STATUS})"]) {
-        mask: svg.construct($VIEWBOX: "viewBox='0 0 #{$SIZE} #{$SIZE}'", $PATH: $status-path + " " + $avatar-path);
+    &[width="#{$SIZE}"] {
+        // Loaded status
+        &:has(rect[mask="url(#svg-mask-status-#{$STATUS})"]) {
+            mask: svg.construct($VIEWBOX: "viewBox='0 0 #{$SIZE} #{$SIZE}'", $PATH: $status-path + " " + $avatar-path);
+        }
+
+        // Changed while visible status
+        &:has(mask):has(rect[fill="#{$color}"]) {
+            mask: svg.construct($VIEWBOX: "viewBox='0 0 #{$SIZE} #{$SIZE}'", $PATH: $status-path + " " + $avatar-path);
+
+            > svg:has([fill="#{$color}"]) {
+                display: none;
+
+                + rect {
+                    fill: $color;
+                    rx: calc($status-size / 2);
+                    ry: calc($status-size / 2);
+                }
+            }
+        }
     }
 }
