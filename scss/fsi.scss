@@ -1,7 +1,7 @@
 @use "./mask";
 
 $statuses: "online-mobile", "online", "idle", "dnd", "offline", "streaming";
-$sizes: "40", "92", "138";
+$sizes: "30", "40", "92", "138";
 
 // Status picker
 foreignObject {
