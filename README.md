@@ -45,6 +45,8 @@
 [release-bd-gh]:    https://github.com/MiniDiscordThemes/FluentStatusIcons/releases/latest/download/FluentStatusIcons.theme.css "Get latest release"
 [release-rp-gh]:    https://github.com/MiniDiscordThemes/FluentStatusIcons/releases/latest/download/net.saltssaumure.FluentStatusIcons.asar "Get latest release"
 
+# ⚠️ Discontinued due to code fragility and low usage.
+
 # FluentStatusIcons Discord Theme
 [![Buy me a coffee on ko-fi][shield-donate]][ko-fi]
 [![BetterDiscord GitHub downloads][shield-bd-dl]][release-bd-gh]
